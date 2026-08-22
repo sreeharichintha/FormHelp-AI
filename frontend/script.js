@@ -276,7 +276,7 @@ previewBox
 
                 const response =
                     await fetch(
-                        "https://formhelp-ai.onrender.com/upload")
+                        "https://formhelp-ai.onrender.com/upload",
                         {
                             method: "POST",
                             body: formData
@@ -1983,7 +1983,7 @@ async function translateExtractedText(text, language) {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:5000/translate",
+            "https://formhelp-ai.onrender.com/translate",
             {
                 method: "POST",
 
