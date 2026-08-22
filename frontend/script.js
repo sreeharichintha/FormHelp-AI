@@ -3494,7 +3494,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const response =
                     await fetch(
-                        "http://127.0.0.1:5000/upload",
+                        "https://formhelp-ai.onrender.com/upload",
                         {
                             method: "POST",
                             body: formData
@@ -4525,7 +4525,7 @@ document.addEventListener("DOMContentLoaded", function () {
                SEND QUESTION TO FLASK BACKEND
             ========================================= */
 
-            const response = await fetch("http://127.0.0.1:5000/ask-ai", {
+            const response = await fetch("https://formhelp-ai.onrender.com/ask-ai", {
 
                 method: "POST",
 
