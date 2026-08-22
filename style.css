@@ -3358,3 +3358,255 @@ footer a {
     }
 
 }
+/* =========================================================
+   FORMHELP AI — PREMIUM WELCOME SCREEN
+   No image required
+   ========================================================= */
+
+#welcome-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(91, 88, 220, 0.45),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(37, 99, 235, 0.35),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #080b20,
+            #11143a,
+            #090b1c
+        );
+
+    backdrop-filter: blur(14px);
+
+    animation: welcomeExit 1s ease 3.5s forwards;
+}
+
+
+/* Animated light effect */
+
+#welcome-screen::before {
+    content: "";
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(108, 92, 231, 0.22);
+
+    filter: blur(100px);
+
+    animation: floatingGlow 4s ease-in-out infinite;
+}
+
+
+/* Welcome content */
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 30px;
+
+    animation: welcomeZoom 1.2s ease forwards;
+}
+
+
+/* WELCOME TO */
+
+.welcome-content p {
+    margin: 0 0 12px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    letter-spacing: 6px;
+
+    color: #d9d8ff;
+
+    opacity: 0;
+
+    animation:
+        welcomeTextIn 0.9s ease 0.2s forwards;
+}
+
+
+/* FORMHELP AI */
+
+.welcome-content h1 {
+    margin: 0;
+
+    font-size: clamp(45px, 8vw, 85px);
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #9c9aff,
+            #ffffff
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 30px rgba(108, 92, 231, 0.5);
+
+    opacity: 0;
+
+    animation:
+        welcomeTitleIn 1s ease 0.5s forwards;
+}
+
+
+/* Tagline */
+
+.welcome-content span {
+    display: block;
+
+    margin-top: 18px;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    color: #d6d7f5;
+
+    opacity: 0;
+
+    animation:
+        welcomeTextIn 1s ease 0.9s forwards;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes welcomeZoom {
+
+    from {
+        transform: scale(0.85);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes welcomeTextIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes welcomeTitleIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes floatingGlow {
+
+    0% {
+        transform: translate(-180px, -100px);
+    }
+
+    50% {
+        transform: translate(180px, 100px);
+    }
+
+    100% {
+        transform: translate(-180px, -100px);
+    }
+}
+
+
+@keyframes welcomeExit {
+
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .welcome-content {
+        padding: 20px;
+    }
+
+    .welcome-content p {
+        font-size: 13px;
+        letter-spacing: 4px;
+    }
+
+    .welcome-content h1 {
+        font-size: 43px;
+        letter-spacing: 1px;
+    }
+
+    .welcome-content span {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
