@@ -276,7 +276,7 @@ previewBox
 
                 const response =
                     await fetch(
-                        "fetch("https://formhelp-ai.onrender.com/upload",
+                        "https://formhelp-ai.onrender.com/upload")
                         {
                             method: "POST",
                             body: formData
