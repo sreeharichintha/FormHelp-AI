@@ -1,1 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FormHelp AI</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ====================================
+     HEADER
+==================================== -->
+
+<header>
+
+    <div class="logo">
+        <span>📄</span>
+        FormHelp AI
+    </div>
+
+
+    <nav>
+
+        <a href="#" data-i18n="home">
+            Home
+        </a>
+
+        <a href="#how-it-works" data-i18n="howItWorks">
+            How It Works
+        </a>
+
+        <a href="#features" data-i18n="features">
+            Features
+        </a>
+
+        <a href="#supported" data-i18n="supportedForms">
+            Supported Forms
+        </a>
+
+    </nav>
+
+
+    <!-- LANGUAGE -->
+
+    <div class="language-selector">
+
+        <button
+            class="language-btn"
+            id="languageBtn"
+        >
+            🌐 English ▾
+        </button>
+
+
+        <div
+            class="language-menu"
+            id="languageMenu"
+        >
+
+            <button data-lang="en">
+                🇬🇧 English
+            </button>
+
+            <button data-lang="te">
+                🇮🇳 తెలుగు
+            </button>
+
+            <button data-lang="hi">
+                🇮🇳 हिन्दी
+            </button>
+
+            <button data-lang="ta">
+                🇮🇳 தமிழ்
+            </button>
+
+            <button data-lang="kn">
+                🇮🇳 ಕನ್ನಡ
+            </button>
+
+            <button data-lang="ml">
+                🇮🇳 മലയാളം
+            </button>
+
+            <button data-lang="mr">
+                🇮🇳 मराठी
+            </button>
+
+            <button data-lang="bn">
+                🇮🇳 বাংলা
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- SIGN IN -->
+
+    <button class="signin-btn">
+        👤 Sign In
+    </button>
+
+</header>
+
+
+
+<!-- ====================================
+     MAIN
+==================================== -->
+
+<main>
+
+
+<!-- ====================================
+     HERO
+==================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div
+            class="badge"
+            data-i18n="aiAssistant"
+        >
+            🤖 AI-Powered Form Assistant
+        </div>
+
+
+        <h1>
+
+            Understand Any Form.
+
+            <span>
+                Fill It With Confidence.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Upload a form photo or PDF and let AI
+            explain what it means, what each field
+            requires, and how to complete it.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <button
+                class="primary-btn"
+                data-i18n="uploadForm"
+            >
+                📤 Upload Your Form
+            </button>
+
+
+            <button
+                class="secondary-btn"
+                data-i18n="seeHow"
+            >
+                ▶ See How It Works
+            </button>
+
+        </div>
+
+
+        <p class="small-text">
+
+            Supports images and PDF documents
+
+        </p>
+
+    </div>
+
+
+
+    <!-- AI PREVIEW -->
+
+    <div class="hero-preview">
+
+        <div class="document-card">
+
+            <div class="document-header">
+
+                <span>
+                    📄
+                </span>
+
+                <div>
+
+                    <strong>
+                        Application Form
+                    </strong>
+
+                    <small>
+                        Sample Document
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-line">
+
+                <label>
+                    Correspondence Address
+                </label>
+
+                <div class="fake-input"></div>
+
+            </div>
+
+
+            <div class="form-line">
+
+                <label>
+                    Annual Income
+                </label>
+
+                <div class="fake-input short"></div>
+
+            </div>
+
+
+            <div class="form-line">
+
+                <label>
+                    Occupation
+                </label>
+
+                <div class="fake-input medium"></div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="ai-card">
+
+            <div class="ai-title">
+
+                🤖 FormHelp AI
+
+                <span>
+                    ●
+                </span>
+
+            </div>
+
+
+            <h3 data-i18n="understand">
+                Understand
+            </h3>
+
+
+            <strong>
+                Correspondence Address
+            </strong>
+
+
+            <p>
+
+                Enter the address where you currently
+                receive official communication.
+
+            </p>
+
+
+            <div class="ai-tags">
+
+                <span>
+                    ✓ 12 Fields Detected
+                </span>
+
+                <span>
+                    ✓ 5 Documents
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================
+     BENEFITS
+==================================== -->
+
+<section class="benefits">
+
+
+    <div class="benefit">
+
+        <span>
+            🔍
+        </span>
+
+        <h3>
+            Understand
+        </h3>
+
+        <p>
+            Understand difficult form terminology.
+        </p>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <span>
+            ✍️
+        </span>
+
+        <h3 data-i18n="knowEnter">
+            Know What to Enter
+        </h3>
+
+        <p>
+            Get simple explanations for every field.
+        </p>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <span>
+            📑
+        </span>
+
+        <h3 data-i18n="checkDocuments">
+            Check Documents
+        </h3>
+
+        <p>
+            Identify documents mentioned in the form.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================
+     HOW IT WORKS
+==================================== -->
+
+<section
+    id="how-it-works"
+    class="section"
+>
+
+    <div class="section-heading">
+
+        <span>
+            HOW IT WORKS
+        </span>
+
+
+        <h2>
+
+            From confusing form to
+
+            <strong>
+                clear guidance.
+            </strong>
+
+        </h2>
+
+
+        <p>
+            Four simple steps to understand your form.
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+
+        <div class="step">
+
+            <div>
+                01
+            </div>
+
+            <h3>
+                Upload
+            </h3>
+
+            <p>
+                Upload a photo or PDF of your form.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div>
+                02
+            </div>
+
+            <h3>
+                Analyze
+            </h3>
+
+            <p>
+                AI reads and understands the document.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div>
+                03
+            </div>
+
+            <h3>
+                Understand
+            </h3>
+
+            <p>
+                Get field-by-field explanations.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div>
+                04
+            </div>
+
+            <h3>
+                Fill Confidently
+            </h3>
+
+            <p>
+                Complete your form with guidance.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================
+     FEATURES
+==================================== -->
+
+<section
+    id="features"
+    class="section features-section"
+>
+
+    <div class="section-heading">
+
+        <span>
+            POWERFUL FEATURES
+        </span>
+
+
+        <h2>
+
+            Everything you need to
+
+            <strong>
+                understand a form.
+            </strong>
+
+        </h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+
+        <div class="feature-card">
+
+            <span>
+                🤖
+            </span>
+
+            <h3>
+                AI Form Identification
+            </h3>
+
+            <p>
+                Identify the form and understand its purpose.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <span>
+                💡
+            </span>
+
+            <h3>
+                Field Explanation
+            </h3>
+
+            <p>
+                Understand what each field means.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <span>
+                🌐
+            </span>
+
+            <h3>
+                Telugu Support
+            </h3>
+
+            <p>
+                Get explanations in simple Telugu.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <span>
+                📋
+            </span>
+
+            <h3>
+                Document Checklist
+            </h3>
+
+            <p>
+                Find documents mentioned in the form.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================
+     SUPPORTED FORMS
+==================================== -->
+
+<section
+    id="supported"
+    class="section"
+>
+
+
+    <div class="section-heading">
+
+        <span data-i18n="supportedForms">
+            SUPPORTED FORMS
+        </span>
+
+
+        <h2>
+
+            CHECK YOUR FORM
+
+            <strong>
+                easily.
+            </strong>
+
+        </h2>
+
+
+        <p>
+            Explore different categories of commonly
+            used forms.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         FormHelp AI - SMART FORM CHECK
+    ===================================================== -->
+
+    <section
+        class="smart-form-check"
+        id="smartFormCheck"
+    >
+
+        <!-- Header -->
+
+        <div class="smart-check-label">
+            SMART FORM CHECK
+        </div>
+
+        <h2 class="smart-check-title">
+            Is Your Form Correct?
+        </h2>
+
+        <p class="smart-check-description">
+            Upload your completed form and let FormHelp AI
+            check for missing or incomplete fields.
+        </p>
+
+
+        <!-- Upload Area -->
+
+        <div
+            class="smart-upload-area"
+            id="smartUploadArea"
+        >
+
+            <div class="smart-upload-icon">
+                📄
+            </div>
+
+            <h3>
+                Upload Your Form
+            </h3>
+
+            <p>
+                JPG, JPEG, PNG or PDF
+            </p>
+
+            <input
+                type="file"
+                id="smartFormFile"
+                accept=".jpg,.jpeg,.png,.pdf"
+                hidden
+            >
+
+            <button
+                type="button"
+                class="smart-upload-btn"
+                id="smartUploadBtn"
+            >
+                📤 Choose Form
+            </button>
+
+        </div>
+
+
+        <!-- Selected File -->
+
+        <div
+            class="smart-file-preview"
+            id="smartFilePreview"
+            style="display:none;"
+        >
+
+            <div class="smart-file-icon">
+                📄
+            </div>
+
+            <div class="smart-file-info">
+
+                <strong id="smartFileName">
+                    Form
+                </strong>
+
+                <span id="smartFileSize">
+                    0 KB
+                </span>
+
+            </div>
+
+            <button
+                type="button"
+                class="smart-remove-btn"
+                id="smartRemoveFile"
+            >
+                ✕
+            </button>
+
+        </div>
+
+
+        <!-- Check Button -->
+
+        <button
+            type="button"
+            class="smart-check-btn"
+            id="smartCheckBtn"
+            disabled
+        >
+            🔍 Check My Form
+        </button>
+
+
+        <!-- Checking Animation -->
+
+        <div
+            class="smart-checking"
+            id="smartChecking"
+            style="display:none;"
+        >
+
+            <div class="smart-loader"></div>
+
+            <h3>
+                Checking Your Form...
+            </h3>
+
+            <p id="smartCheckingText">
+                Reading your form and checking the fields.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             RESULT SECTION
+        ================================================= -->
+
+        <div
+            class="smart-result"
+            id="smartResult"
+            style="display:none;"
+        >
+
+            <!-- Result Header -->
+
+            <div class="smart-result-header">
+
+                <div class="smart-result-icon">
+                    🤖
+                </div>
+
+                <div>
+
+                    <span>
+                        SMART FORM ANALYSIS
+                    </span>
+
+                    <h3>
+                        Form Check Completed
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- Readiness -->
+
+            <div class="form-readiness">
+
+                <div
+                    class="readiness-circle"
+                    id="readinessCircle"
+                    style="--progress: 0deg;"
+                >
+
+                    <span
+                        class="readiness-percentage"
+                        id="readinessPercentage"
+                    >
+                        0%
+                    </span>
+
+                </div>
+
+                <p class="readiness-text">
+                    Form Readiness
+                </p>
+
+            </div>
+
+
+            <!-- Status Message -->
+
+            <div
+                class="smart-status-message"
+                id="smartStatusMessage"
+            >
+                Checking completed.
+            </div>
+
+
+            <!-- Field Check Card -->
+
+            <div class="form-check-card">
+
+                <div class="form-check-heading">
+                    📋 Field Check
+                </div>
+
+                <div id="smartFieldsList">
+
+                    <!-- JavaScript will add fields here -->
+
+                </div>
+
+            </div>
+
+
+            <!-- Important Message -->
+
+            <div
+                class="smart-important"
+                id="smartImportant"
+            >
+
+                <strong>
+                    💡 Important:
+                </strong>
+
+                <span id="smartImportantText">
+                    Please review the fields before submitting your form.
+                </span>
+
+            </div>
+
+
+            <!-- Statistics -->
+
+            <div class="smart-statistics">
+
+                <div class="smart-stat">
+
+                    <div class="smart-stat-icon">
+                        ✅
+                    </div>
+
+                    <div
+                        class="smart-stat-number"
+                        id="smartCorrectCount"
+                    >
+                        0
+                    </div>
+
+                    <div class="smart-stat-label">
+                        Correct Fields
+                    </div>
+
+                </div>
+
+
+                <div class="smart-stat">
+
+                    <div class="smart-stat-icon">
+                        ⚠️
+                    </div>
+
+                    <div
+                        class="smart-stat-number"
+                        id="smartMissingCount"
+                    >
+                        0
+                    </div>
+
+                    <div class="smart-stat-label">
+                        Missing Fields
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Check Again -->
+
+            <button
+                type="button"
+                class="smart-check-again-btn"
+                id="smartCheckAgain"
+            >
+                🔄 Check Another Form
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ASK AI SECTION
+    ===================================================== -->
+
+    <section
+        class="ask-ai-section"
+        id="askAI"
+    >
+
+        <div class="ask-ai-content">
+
+            <div class="ask-ai-badge">
+                🤖 ASK AI
+            </div>
+
+            <h2>
+                Have a Question About Your Form?
+            </h2>
+
+            <p>
+                Ask FormHelp AI about form fields, required
+                documents, eligibility, or how to fill your form.
+            </p>
+
+            <button
+                type="button"
+                class="ask-ai-btn"
+                id="openAskAI"
+            >
+                💬 Ask AI
+            </button>
+
+        </div>
+
+    </section>
+
+
+</section>
+
+
+
+<!-- ====================================
+     FORM CATEGORY MODAL
+==================================== -->
+
+<div
+    class="forms-modal"
+    id="formsModal"
+>
+
+    <div class="forms-modal-box">
+
+
+        <button
+            class="close-forms-modal"
+            onclick="closeFormsModal()"
+        >
+            ✕
+        </button>
+
+
+        <div
+            class="forms-modal-icon"
+            id="formsModalIcon"
+        >
+            🏛️
+        </div>
+
+
+        <h2 id="formsModalTitle">
+            Government Forms
+        </h2>
+
+
+        <p id="formsModalDescription">
+            Choose a form type.
+        </p>
+
+
+        <div
+            class="form-type-grid"
+            id="formTypeGrid"
+        >
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ====================================
+     INDIVIDUAL FORMS MODAL
+==================================== -->
+
+<div
+    class="forms-modal"
+    id="individualFormsModal"
+>
+
+
+    <div class="forms-modal-box large">
+
+
+        <button
+            class="close-forms-modal"
+            onclick="closeIndividualForms()"
+        >
+            ✕
+        </button>
+
+
+        <button
+            class="back-forms-btn"
+            onclick="backToCategories()"
+        >
+            ← Back
+        </button>
+
+
+        <div
+            class="forms-modal-icon"
+            id="individualTypeIcon"
+        >
+            📄
+        </div>
+
+
+        <h2 id="individualTypeTitle">
+            Forms
+        </h2>
+
+
+        <p id="individualTypeDescription">
+            Select a form.
+        </p>
+
+
+        <div
+            class="individual-form-grid"
+            id="individualFormGrid"
+        >
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ====================================
+     FORM PREVIEW MODAL
+==================================== -->
+
+<div
+    class="form-preview-modal"
+    id="formPreviewModal"
+>
+
+
+    <div class="form-preview-box">
+
+
+        <button
+            class="close-form-preview"
+            onclick="closeFormPreview()"
+        >
+            ✕
+        </button>
+
+
+        <div
+            class="sample-form-icon"
+            id="previewFormIcon"
+        >
+            📄
+        </div>
+
+
+        <h2 id="previewFormTitle">
+            Form
+        </h2>
+
+
+        <p id="previewFormDescription">
+            Official form
+        </p>
+
+
+        <!-- IMAGE / PDF PREVIEW -->
+
+        <div
+            class="form-direct-preview"
+            id="formDirectPreview"
+        >
+        </div>
+
+
+        <div class="preview-actions">
+
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="openOriginalForm"
+                class="preview-action-btn"
+            >
+                🔗 Open Original
+            </a>
+
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="downloadForm"
+                class="preview-action-btn download"
+            >
+                ⬇ Download / Save
+            </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ====================================
+     FINAL CTA
+==================================== -->
+
+<section class="cta">
+
+
+    <h2>
+        Confused by a form?
+    </h2>
+
+
+    <p>
+
+        Upload it. Understand it.
+        Fill it confidently.
+
+    </p>
+
+
+    <button class="primary-btn">
+
+        📤 Analyze My Form
+
+    </button>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- ====================================
+     FOOTER
+==================================== -->
+
+<footer>
+
+
+    <div>
+
+        <strong>
+            📄 FormHelp AI
+        </strong>
+
+        <p>
+            AI-powered form understanding and guidance.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <a href="#">
+            Privacy
+        </a>
+
+        <a href="#">
+            Terms
+        </a>
+
+        <a href="#how-it-works">
+            How It Works
+        </a>
+
+    </div>
+
+
+    <p>
+        © 2026 FormHelp AI
+    </p>
+
+</footer>
+
+
+
+<!-- ====================================
+     ASK AI MODAL
+==================================== -->
+
+<div
+    class="ask-ai-modal"
+    id="askAIModal"
+>
+
+    <div class="ask-ai-box">
+
+        <!-- Close -->
+
+        <button
+            type="button"
+            class="close-ask-ai"
+            id="closeAskAI"
+        >
+            ✕
+        </button>
+
+
+        <!-- Header -->
+
+        <div class="ask-ai-header">
+
+            <div class="ask-ai-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <h2>
+                    FormHelp AI
+                </h2>
+
+                <span>
+                    Ask me anything about your form
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Messages -->
+
+        <div
+            class="ask-ai-messages"
+            id="askAIMessages"
+        >
+
+            <div class="ai-message">
+                👋 Hi! I'm FormHelp AI.<br>
+                Ask me anything about your form.
+            </div>
+
+        </div>
+
+
+        <!-- Input -->
+
+        <div class="ask-ai-input-area">
+
+            <input
+                type="text"
+                id="askAIInput"
+                placeholder="Ask something about your form..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="askAISend"
+            >
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ====================================
+     SIGN IN MODAL
+==================================== -->
+
+<div
+    class="signin-modal"
+    id="signinModal"
+>
+
+
+    <div class="signin-box">
+
+
+        <button
+            class="close-signin"
+            id="closeSignin"
+        >
+            ✕
+        </button>
+
+
+        <div class="signin-icon">
+            👤
+        </div>
+
+
+        <h2>
+            Welcome Back
+        </h2>
+
+
+        <p>
+            Sign in to save and access your form history.
+        </p>
+
+
+        <form id="signinForm">
+
+
+            <label>
+                Email
+            </label>
+
+
+            <input
+                type="email"
+                id="signinEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label>
+                Password
+            </label>
+
+
+            <input
+                type="password"
+                id="signinPassword"
+                placeholder="Enter your password"
+                required
+            >
+
+
+            <button
+                type="submit"
+                class="login-submit"
+            >
+                🔐 Sign In
+            </button>
+
+
+        </form>
+
+
+
+        <div class="signin-divider">
+
+            <span>
+                OR
+            </span>
+
+        </div>
+
+
+
+        <button
+            class="guest-btn"
+            id="guestAccess"
+        >
+            🚀 Continue Without Sign In
+        </button>
+
+
+
+        <p class="signup-text">
+
+            Don't have an account?
+
+            <a
+                href="#"
+                id="createAccount"
+            >
+                Create Account
+            </a>
+
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ====================================
+     SCRIPT
+==================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
