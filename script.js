@@ -4657,3 +4657,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+/* =========================================================
+   FORMHELP AI — WELCOME INTRO
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const welcomeScreen =
+        document.getElementById("welcome-screen");
+
+    if (!welcomeScreen) {
+        return;
+    }
+
+    // Show welcome screen for a few seconds
+    setTimeout(function () {
+
+        welcomeScreen.style.opacity = "0";
+        welcomeScreen.style.visibility = "hidden";
+        welcomeScreen.style.pointerEvents = "none";
+
+    }, 4500);
+
+});
